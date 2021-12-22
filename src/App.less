@@ -1,0 +1,78 @@
+.const-swiper-size {
+  width: 40vw;
+  // max-width: 600px;
+  max-height: 100vh;
+  // min-width: 300px;
+}
+
+.App {
+  text-align: center;
+  // max-height: 100vh;
+
+  .swiper-slide {
+    .const-swiper-size();
+  }
+
+  .swiper-container {
+    // width: 100%;
+    // max-width: 1152px !important;
+    // overflow: visible;
+    // overflow-y: visible;
+
+    .swiper-img-display {
+      transition: all 0.3s linear;
+      .const-swiper-size();
+      background-size: contain;
+      background-position: center center;
+
+      img {
+        // border-radius: 20px;
+        width: 100%;
+        object-position: 50% 50%;
+      }
+    }
+
+    .scale-img {
+      // transform: scale(1.2);
+      // scaleX(2)
+      // scaleY(2)
+
+      // img {
+      //   width: 120%;
+      //   object-position: 50% 50%;
+      // }
+    }
+  }
+
+  .scroll-video {
+    // transition-property: transform;
+    // transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    // transition-duration: 10ms;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    perspective: 1000px;
+  }
+
+  .logo-title {
+    background: linear-gradient(45deg, #ac0c0c, #e24c4c);
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+  }
+
+  .roadmap-title {
+    background: linear-gradient(10deg, #dd9595, #ffffff);
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+  }
+
+  .section-title {
+    background: linear-gradient(45deg, #ac0c0c, #ffffff);
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+  }
+}
